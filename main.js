@@ -14,3 +14,9 @@ add_items.innerHTML='<strong>Add Items</strong>'
     }
     items[2].style.backgroundColor='green'
 }
+
+{
+    let itemsByTag=document.getElementsByTagName('li')
+    console.log(itemsByTag)
+    itemsByTag[4].style.fontWeight='bold'
+    itemsByTag[4].style.color='red'}
