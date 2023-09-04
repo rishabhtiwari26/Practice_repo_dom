@@ -4,3 +4,4 @@ let add_items=document.getElementById("main").getElementsByClassName('title')[0]
 
 add_items.style.color='green'
 add_items.innerHTML='<strong>Add Items</strong>'
+// new line comment
