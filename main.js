@@ -20,3 +20,18 @@ add_items.innerHTML='<strong>Add Items</strong>'
     console.log(itemsByTag)
     itemsByTag[4].style.fontWeight='bold'
     itemsByTag[4].style.color='red'}
+
+    // change the font color to green for 2nd item in the item list
+    // odd elements and make their background green using QuerySelectorALL
+{
+    let secondItem=document.querySelectorAll('li')
+    console.log(secondItem)
+    secondItem[1].style.color='green'
+
+    let odd=document.querySelectorAll('li:nth-child(odd)');
+    for (let i =0 ;i<odd.length;i++){
+        odd[i].style.backgroundColor='green';
+        odd[i].style.color='white';
+
+    }
+}
