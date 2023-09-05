@@ -36,9 +36,7 @@ function filterItems(e){
     var li = document.getElementsByTagName('li')
     Array.from(li).forEach(function(item){
         let itemName=item.firstChild.textContent;
-        if (item.childNodes[1].className='list-group-item'){
-            var itemdescript = item.childNodes[1].textContent
-        }
+        const itemdescript= item.childNodes[1].textContent
 
         console.log(itemdescript)
         if (itemName.toLowerCase().indexOf(text)!=-1 || itemdescript.toLowerCase().indexOf(text)!=-1) {
